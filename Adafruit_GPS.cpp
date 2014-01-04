@@ -74,8 +74,16 @@ boolean Adafruit_GPS::parse(char *nmea) {
 
     // parse out longitude
     p = strchr(p, ',')+1;
-    longitude = atof(p);
-
+    longitude = atof(p);  // <--- returns only 6 total digits. We lose a digit during conversion!
+     // ?? Maybe something more like this? 
+     //     p = strchr(p, ',')+1;
+     //     float timef = atof(p);  //<-- gets only 6 digits total. We lose precision??
+ 
+     //     p = strchr(p, '.')+1;   //<-- gets decimal only "####"
+     //     float times = atof(p);  // then multiply by 60 & put decimal in
+// OR
+     //     p = strchr(p, '.');   //<-- gets decimal only ".####"
+     //     float times = atof(p);  // then multiply by 60 for DMS
     p = strchr(p, ',')+1;
 
     if (p[0] == 'W') lon = 'W';             // ?? Simplify as above?

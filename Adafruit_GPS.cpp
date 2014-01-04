@@ -49,10 +49,13 @@ boolean Adafruit_GPS::parse(char *nmea) {
   if (strstr(nmea, "$GPGGA")) {
     // found GGA
     char *p = nmea;
+
     // get time
     p = strchr(p, ',')+1;
     float timef = atof(p);
+
     uint32_t time = timef;
+
     hour = time / 10000;
     minute = (time % 10000) / 100;
     seconds = (time % 100);
@@ -61,12 +64,12 @@ boolean Adafruit_GPS::parse(char *nmea) {
 
     // parse out latitude
     p = strchr(p, ',')+1;
-    latitude = atof(p);
+    latitude = atof(p);               // ?? Can be easily reformatted similar to time (above) 
 
-    p = strchr(p, ',')+1;
-    if (p[0] == 'N') lat = 'N';
-    else if (p[0] == 'S') lat = 'S';
-    else if (p[0] == ',') lat = 0;
+    p = strchr(p, ',')+1;                 // ?? Simplify? Here and long (below)?
+    if (p[0] == 'N') lat = 'N';           //     if (*p==',') lat = 0;
+    else if (p[0] == 'S') lat = 'S';      //     else lat = *p;
+    else if (p[0] == ',') lat = 0;        // ?? Is return needed here? 
     else return false;
 
     // parse out longitude
@@ -74,10 +77,13 @@ boolean Adafruit_GPS::parse(char *nmea) {
     longitude = atof(p);
 
     p = strchr(p, ',')+1;
-    if (p[0] == 'W') lon = 'W';
+
+    if (p[0] == 'W') lon = 'W';             // ?? Simplify as above?
     else if (p[0] == 'E') lon = 'E';
     else if (p[0] == ',') lon = 0;
+
     else return false;
+
 
     p = strchr(p, ',')+1;
     fixquality = atoi(p);
@@ -90,7 +96,9 @@ boolean Adafruit_GPS::parse(char *nmea) {
 
     p = strchr(p, ',')+1;
     altitude = atof(p);
+
     p = strchr(p, ',')+1;
+
     p = strchr(p, ',')+1;
     geoidheight = atof(p);
     return true;

@@ -1,11 +1,11 @@
-Sentence\Info, UTC Time, Lat, Long,	Altitude,	Speed,	Heading, HDOP, VDOP, PDOP, Geoid	
-GGA,             Yes, 	  Yes,	Yes,	  Yes,	  No,   No,     Yes,	   No, No, Yes
-Global Positioning System Fix Data/ Time/ Position/ and fix related data,,,,,,,,,,
-GSA,No,No,No,No,No,No,Yes,Yes,Yes,No
-GPS receiver operating mode/ active satellites used/ and DOP values,,,,,,,,,,
-GSV,No,No,No,No,No,No,No,No,No,No
-GPS satellites in view/ ID numbers/ elevation/ azimuth/ and SNR values,,,,,,,,,,
-RMC,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No
-Recommended Minimum Navigation Information,,,,,,,,,,
-VTG,No,No,No,No,Yes,Yes,No,No,No,No
-Track Made Good and Ground speed,,,,,,,,,,
+Sentence\Info, UTC Time, Lat, Long,	Altitude,	Speed,	Heading, HDOP, VDOP, PDOP, Geoid, Fix Indicator, Status, Mode 1, Mode 2, FAA Mode	
+GGA,             Yes, 	  Yes,	Yes,	  Yes,	  No,   No,     Yes,	   No, No, Yes,No,Yes,No,No,No
+Global Positioning System Fix Data/ Time/ Position/ and fix related data,,,,,,,,,,,,,,,
+GSA,No,No,No,No,No,No,Yes,Yes,Yes,No,No,No,Yes, Yes,No
+GPS receiver operating mode/ active satellites used/ and DOP values,,,,,,,,,,,,,,,
+GSV,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+GPS satellites in view/ ID numbers/ elevation/ azimuth/ and SNR values,,,,,,,,,,,,,,,
+RMC,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,Yes,No,No,Yes
+Recommended Minimum Navigation Information,,,,,,,,,,,,,,,
+VTG,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,No,Yes
+Track Made Good and Ground speed,,,,,,,,,,,,,,,

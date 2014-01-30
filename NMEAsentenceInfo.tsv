@@ -1,5 +1,5 @@
 Sentence\Info   Time	Lat		Long	Altitude	Speed	Heading		HDOP	VDOP	PDOP	Geoid	
-GGA   Yes	  Yes	  Yes	  Yes	  No    No    Yes	No    No    Yes
+GGA     Yes	  Yes	  Yes	  Yes	    No      No    Yes	No      No      Yes
 Global Positioning System Fix Data. Time, Position and fix related
 ￼data
 GSA

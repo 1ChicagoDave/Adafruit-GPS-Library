@@ -2,7 +2,7 @@ Sentence\Info, UTC Time, Lat, Long,	Altitude,	Speed,	Heading, HDOP, VDOP, PDOP, 
 GGA,             Yes, 	  Yes,	Yes,	  Yes,	  No,   No,     Yes,	   No, No, Yes
 Global Positioning System Fix Data/ Time/ Position/ and fix related data,,,,,,,,,,
 GSA,,,,,,,,,,
-GPS receiver operating mode, active satellites used and DOP values,,,,,,,,,,
+GPS receiver operating mode/ active satellites used/ and DOP values,,,,,,,,,,
 GSV,,,,,,,,,,
 GPS satellites in view/ ID numbers/ elevation/ azimuth/ and SNR values,,,,,,,,,,
 RMC,,,,,,,,,,

@@ -1,11 +1,11 @@
 Sentence\Info, UTC Time, Lat, Long,	Altitude,	Speed,	Heading, HDOP, VDOP, PDOP, Geoid	
 GGA,             Yes, 	  Yes,	Yes,	  Yes,	  No,   No,     Yes,	   No, No, Yes
 Global Positioning System Fix Data/ Time/ Position/ and fix related data,,,,,,,,,,
-GSA,,,,,,,,,,
+GSA,No,No,No,No,No,No,Yes,Yes,Yes,No
 GPS receiver operating mode/ active satellites used/ and DOP values,,,,,,,,,,
-GSV,,,,,,,,,,
+GSV,No,No,No,No,No,No,No,No,No,No
 GPS satellites in view/ ID numbers/ elevation/ azimuth/ and SNR values,,,,,,,,,,
-RMC,,,,,,,,,,
+RMC,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No
 Recommended Minimum Navigation Information,,,,,,,,,,
-VTG,,,,,,,,,,
+VTG,No,No,No,No,Yes,Yes,No,No,No,No
 Track Made Good and Ground speed,,,,,,,,,,
